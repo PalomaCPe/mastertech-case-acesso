@@ -1,4 +1,7 @@
 package com.mastertech.access.customer.repository;
 
-public interface CustomerRepository {
+import com.mastertech.access.customer.model.Customer;
+import org.springframework.data.repository.CrudRepository;
+
+public interface CustomerRepository extends CrudRepository<Customer, Integer> {
 }

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/access/pom.xml" />
+        <option value="$PROJECT_DIR$/config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/customer/pom.xml" />
+        <option value="$PROJECT_DIR$/door/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/../203-exemplo-kafka/consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/../203-exemplo-kafka/producer/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>

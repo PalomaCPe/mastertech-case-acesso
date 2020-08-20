@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/access/access.iml" filepath="$PROJECT_DIR$/access/access.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../203-exemplo-kafka/consumer/consumer.iml" filepath="$PROJECT_DIR$/../203-exemplo-kafka/consumer/consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/customer/customer.iml" filepath="$PROJECT_DIR$/customer/customer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/door/door.iml" filepath="$PROJECT_DIR$/door/door.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka/eureka.iml" filepath="$PROJECT_DIR$/eureka/eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/mastertech-case-acesso.iml" filepath="$PROJECT_DIR$/.idea/mastertech-case-acesso.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../203-exemplo-kafka/producer/producer.iml" filepath="$PROJECT_DIR$/../203-exemplo-kafka/producer/producer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zuul/zuul.iml" filepath="$PROJECT_DIR$/zuul/zuul.iml" />
+    </modules>
+  </component>
+</project>
