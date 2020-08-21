@@ -35,7 +35,7 @@ public class AccessController {
 
     
     @GetMapping("/{customerId}/{doorId}")
-    public AccessResponse listAcesso(@PathVariable Integer customerId, @PathVariable Integer doorId) {
+    public AccessResponse listAccess(@PathVariable Integer customerId, @PathVariable Integer doorId) {
         Access access = accessMapper.toAccessDetail(customerId, doorId);
         access = accessService.findAccess(access);
 

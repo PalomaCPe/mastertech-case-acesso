@@ -80,7 +80,7 @@ public class AccessService {
         }
         accessLogProducer.sendToKafka(logAccess);
 
-        door = doorClient.getById(access.getDoorId());
+        door = doorClient.getById(access.getDoorId()
 
         customer = customerClient.getById(access.getCustomerId());
 
