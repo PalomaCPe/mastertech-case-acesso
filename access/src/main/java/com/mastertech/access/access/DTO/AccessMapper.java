@@ -7,14 +7,23 @@ import org.springframework.stereotype.Component;
 public class AccessMapper {
     public Access toAccess(AccessRequest accessRequest){
         Access access = new Access();
-        access.setName(accessRequest.getName());
+        access.setCustomerId(accessRequest.getCustomerId());
+        access.setDoorId(accessRequest.getDoorId());
         return access;
     }
 
     public AccessResponse toAccessResponse(Access access) {
         AccessResponse accessResponse = new AccessResponse();
-        accessResponse.setId(access.getId());
-        accessResponse.setName(access.getName());
+        accessResponse.setCustomerId(access.getCustomerId());
+        accessResponse.setDoorId(access.getDoorId());
         return accessResponse;
+    }
+
+    public Access toAccessDetail(Integer customerId, Integer doorId) {
+        Access access = new Access();
+        access.setCustomerId(customerId);
+        access.setDoorId(doorId);
+
+        return access;
     }
 }

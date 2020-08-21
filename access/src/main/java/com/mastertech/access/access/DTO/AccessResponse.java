@@ -1,23 +1,23 @@
 package com.mastertech.access.access.DTO;
 
 public class AccessResponse {
-    private Integer id;
+    private Integer doorId;
 
-    private String name;
+    private Integer customerId;
 
-    public Integer getId() {
-        return id;
+    public Integer getDoorId() {
+        return doorId;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setDoorId(Integer doorId) {
+        this.doorId = doorId;
     }
 
-    public String getName() {
-        return name;
+    public Integer getCustomerId() {
+        return customerId;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setCustomerId(Integer customerId) {
+        this.customerId = customerId;
     }
 }

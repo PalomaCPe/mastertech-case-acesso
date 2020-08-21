@@ -1,15 +1,26 @@
 package com.mastertech.access.access.model;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
-@Table
-public class Access {
+@Table(name = "access")
+public class Access implements Serializable {
+    private static final long serialVersionUID = -8026843854427060306L;
+
+    @Id
     @GeneratedValue
     private Integer id;
 
     @Column
-    private String name;
+    private Integer doorId;
+
+    @Column
+    private Integer customerId;
+
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
+    }
 
     public Integer getId() {
         return id;
@@ -19,11 +30,19 @@ public class Access {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public Integer getDoorId() {
+        return doorId;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setDoorId(Integer doorId) {
+        this.doorId = doorId;
+    }
+
+    public Integer getCustomerId() {
+        return customerId;
+    }
+
+    public void setCustomerId(Integer customerId) {
+        this.customerId = customerId;
     }
 }

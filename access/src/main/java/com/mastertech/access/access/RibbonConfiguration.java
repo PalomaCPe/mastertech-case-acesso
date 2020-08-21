@@ -1,4 +1,4 @@
-package com.mastertech.access.customer;
+package com.mastertech.access.access;
 
 import com.netflix.loadbalancer.IRule;
 import com.netflix.loadbalancer.RandomRule;

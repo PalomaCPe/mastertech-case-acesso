@@ -32,4 +32,20 @@ public class AccessController {
         access = accessService.saveAccess(access);
         return accessMapper.toAccessResponse(access);
     }
+
+    
+    @GetMapping("/{customerId}/{doorId}")
+    public AccessResponse listAcesso(@PathVariable Integer customerId, @PathVariable Integer doorId) {
+        Access access = accessMapper.toAccessDetail(customerId, doorId);
+        access = accessService.findAccess(access);
+
+        return accessMapper.toAccessResponse(access);
+    }
+
+    @DeleteMapping("/{customerId}/{doorId}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void deleteAccess(@PathVariable Integer customerId, @PathVariable Integer doorId) {
+        Access access = accessMapper.toAccessDetail(customerId, doorId);
+        accessService.deleteAccess(access);
+    }
 }

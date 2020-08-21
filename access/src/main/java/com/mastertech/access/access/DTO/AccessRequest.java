@@ -1,17 +1,26 @@
 package com.mastertech.access.access.DTO;
 
+import javax.persistence.Column;
 import javax.validation.constraints.*;
 
 public class AccessRequest {
-    @NotBlank
-    @Size(min = 3)
-    private String name;
+    private Integer doorId;
 
-    public String getName() {
-        return name;
+    private Integer customerId;
+
+    public Integer getDoorId() {
+        return doorId;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setDoorId(Integer doorId) {
+        this.doorId = doorId;
+    }
+
+    public Integer getCustomerId() {
+        return customerId;
+    }
+
+    public void setCustomerId(Integer customerId) {
+        this.customerId = customerId;
     }
 }
